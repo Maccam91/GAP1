@@ -7,7 +7,7 @@ Text based Simon Says game aka Telephone
 "As a player I want to play a relaxing game"
 ## MVP GOALS
 1. I need to have a field where user's can input their text
-2. The field should reference a string provided
+2. The field should be used by the users to input the above text shown at the start of each round
 3. I should indicate if the user input the correct string
 
 ![](/GAP1wireframe.jpg)

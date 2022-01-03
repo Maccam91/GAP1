@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(255, 173, 228);
+}
+h1{
+    font-size: 200px;
+    color: rgb(255, 142, 200);
+    text-align: center;
+}
+#playerzone{
+    display: grid;
+    place-items: center;
+}
+input{
+    resize: none;
+    height: 200px;
+    width: 1000px;
+    position: bottom;
+    border: none;
+    background-color:rgb(200, 142, 255);
+    color:rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    
+}
+input:focus{
+  outline: none;
+}
