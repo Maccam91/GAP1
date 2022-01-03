@@ -10,4 +10,4 @@ Text based Simon Says game aka Telephone
 2. The field should reference a string provided
 3. I should indicate if the user input the correct string
 
-! [This is an image] (GAP1/GAP1wireframe.jpg)
+![](main/GAP1wireframe.jpg)
