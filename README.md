@@ -16,10 +16,11 @@ The players will then have to input to the best of the skills the string that wa
 
 
 ## User Stories
-- "As a person I want an interactive way to build upon my typing skills"
-- "As a person I want to help improve my memorization skills"
-- "As a person I want to build up on my typing skills through repetition"
-- "As a player I want to play a relaxing game" 
+- "As a player I want an interactive way to build upon my typing skills"
+- "As a player I want to help improve my memorization skills"
+- "As a player I would like a system to alert me of any typos I make during the game"
+- "As a player I would like a button to start/restart the game"
+
 
 ## MVP GOALS
 1. Generate a wordbank/string that the users must replicate in the submission field.
