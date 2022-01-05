@@ -9,35 +9,21 @@ console.log(playZone)
 const promptDisplay = document.getElementById('prompt')
 console.log(promptDisplay.innerText)
 
- let newPrompt = [""];
- let promptIndex = 0;
+let music = document.getElementById('bgmusic');
+music.volume = .05;
 
-// function promptUp(){
-//     promptDisplay.textContent = newPrompt;
-//     newPrompt = playWords[promptIndex];
-//     newPrompt.split('').forEach(char => {
-//         const charSpan = document.createElement('span')
-//         charSpan.innerText = char
-//         promptDisplay.appendChild(charSpan)
-//     })
-//     if(newPrompt < playWords.length)
-//     newPrompt.push(playWords++)
-    
-// }
+function newPrompt(length,x) {
+    let result = [];
+        
+    for ( let i = 0; i < length; i++ ) {
+      const randomWords = (Math.floor(Math.random() * 
+ playWords.length));
+ result.push(x[randomWords])
+   }
+   return result.join(',');
+   }
+newPrompt(3,playWords)
 
-function promptUpdate(){
-    promptDisplay.textContent = newPrompt;
-    newPrompt = playWords[promptIndex];
-    newPrompt.split('').forEach(char => {
-        const charSpan = document.createElement('span')
-        charSpan.innerText = char
-        promptDisplay.appendChild(charSpan)
-    })
-if (promptIndex < playWords.length -1)
-promptIndex++;
-else
-promptIndex = 0;
-}
 
 function playerInput(){
     inputArea = playZone.value;

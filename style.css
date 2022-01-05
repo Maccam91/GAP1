@@ -6,6 +6,7 @@ h1 {
     font-size: 200px;
     color: rgb(255, 142, 200);
     text-align: center;
+    
 }
 #prompt{
     font-family: 'Fredoka One', cursive;
@@ -14,11 +15,14 @@ h1 {
     font-size: 20vh;
     color: rgb(255, 142, 200);
     text-align: center;
+    text-shadow: 5px 5px 5px rgba(200, 142, 255, .5);
+    
 
 }
 #playerzone {
     display: grid;
     place-items: center;
+    
 }
 textarea {
     font-family: 'Fredoka One', cursive;
@@ -40,10 +44,12 @@ input {
     width: 1000px;
     position: relative;
     border: none;
-    background-color:rgb(200, 142, 255);
+    border-radius: 25px;
+    background-color:rgba(200, 142, 255, .5);
     color:rgb(255, 246, 161);
     font-size: 140px;
     text-align: center;
+    box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.25);
     
 }
 button {
@@ -66,3 +72,9 @@ input:focus {
 /* input:not(:focus) {
     display: none;
 } */
+
+audio{
+    background-color: rgba(200, 142, 255, .5);
+    display: none;
+    
+}
