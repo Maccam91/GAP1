@@ -1,11 +1,14 @@
-console.log("JS Loaded")
-
 const playWords = ["red","blue","yellow","green","orange","violet","indigo","cat","dog","bird","quick","zebra","loop","Houston","Texas","713","832",
 "nine","money","league","challenge","slow","pink","complete","mvp","javaScript"]
-console.log(playWords)
-
+// console.log(playWords)
 const playZone = document.getElementById('playArea')
-console.log(playZone)
+// console.log(playZone)
+const promptDisplay = document.getElementById('prompt')
+// console.log(promptDisplay.innerText)
+let music = document.getElementById('bgmusic');
+music.volume = .05;
+
+
 playZone.addEventListener('input', () => {
   const arrayPrompt = promptDisplay.querySelectorAll('span')
   const promptValue = playZone.value.split('')
@@ -29,14 +32,8 @@ playZone.addEventListener('input', () => {
   
 })
 
-const promptDisplay = document.getElementById('prompt')
-console.log(promptDisplay.innerText)
-
-let music = document.getElementById('bgmusic');
-music.volume = .05;
-
 async function renderNewPrompt() {
- const prompt = await newPrompt(3,playWords)
+ const prompt = await newPrompt(6,playWords)
 promptDisplay.innerHTML = ''
 prompt.split('').forEach(character => {
   const characterSpan = document.createElement('span')
@@ -59,7 +56,11 @@ function newPrompt(length,x) {
 newPrompt(3,playWords)
 
 
-
+// function playMusic(btn){
+//   let btn= document.getElementById('musicOn').addEventListener('click')
+//   var music = Audio('music\01 Laxcity - Elysian.wav');
+//   music.play();
+//   }
 // function playerInput(){
 //     inputArea = playZone.value;
 //     inputAreaArray = inputArea.split('');

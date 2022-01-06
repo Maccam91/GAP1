@@ -1,5 +1,9 @@
 body {
-    background-color: rgb(255, 173, 228);
+    background-color: rgb(255, 176, 229);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
 }
 h1 {
@@ -9,11 +13,19 @@ h1 {
     text-align: center;
     
 }
+#rounds {
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+    
+    color: rgb(178, 112, 204);
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
+    margin: 0;
+}
 #prompt{
     font-family: 'Fredoka One', cursive;
-    font-size: 200px;
-    font-size: 20vw;
-    font-size: 20vh;
+    font-size: 10vw;
+    font-size: 10vh;
     color: rgb(255, 142, 200);
     text-align: center;
     text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
@@ -24,7 +36,7 @@ h1 {
 #playerzone {
     display: grid;
     place-items: center;
-   margin: 0; 
+    margin: 0; 
 }
 textarea {
     font-family: 'Fredoka One', cursive;
@@ -37,9 +49,10 @@ textarea {
     border-radius: 25px;
     background-color:rgba(200, 142, 255, .5);
     color:rgb(255, 246, 161);
-    font-size: 140px;
+    font-size: 160px;
     text-align: center;
     box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
+    
     
 }
 input {
@@ -54,19 +67,51 @@ input {
     color:rgb(255, 246, 161);
     font-size: 140px;
     text-align: center;
-    box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
+    /* box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15); */
     
 }
-button {
+#game{
+    /* display: none; */
+}
+#startScreen {
+    display: none;
+    box-shadow:5px 5px 100px 5px rgba(36, 1, 56, 0.507);
+    border:none;
+    border-radius: 50px;
+    font-family: 'Fredoka One', cursive;    
+    font-size: 25vw;
+    font-size: 25vh;    
+    background-color: rgba(93, 255, 174, 0.705);
+    color: rgb(255, 142, 200);
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
+    margin: 0;
+    
+}
+#startButton {
     
     border:none;
-    background-color:rgb(255, 173, 228);
-    color: white;
-    font-size: 75px;
+    font-family: 'Fredoka One', cursive;    
+    font-size: 25vw;
+    font-size: 25vh;    
+    background-color: transparent;
+    color: rgb(255, 142, 200);
     text-align: center;
-   
+    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
+    margin: 0; 
     
     
+}
+#musicOn{
+    font-family: 'Fredoka One', cursive;  
+    border:none;
+    background: transparent;
+    font-size: 10vw;
+    font-size: 10vh;
+    text-align: center;
+    /* text-shadow: 5px 5px 5px rgba(200, 142, 255, .66); */
+    margin: 0;
+    color: rgb(255, 93, 93);
 }
 textarea:focus {
     outline: none;
@@ -75,11 +120,9 @@ input:focus {
   outline: none;
 }
 
-/* input:not(:focus) {
-    display: none;
-} */
+
 .correct {
-    color:rgb(205, 255, 243);
+    color:rgba(93, 255, 174,0.705);
 }
 .incorrect{
     color: rgb(112, 57, 57);
