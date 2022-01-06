@@ -1,5 +1,6 @@
 body {
     background-color: rgb(255, 173, 228);
+    margin: 0;
 }
 h1 {
     font-family: 'Fredoka One', cursive;
@@ -15,26 +16,30 @@ h1 {
     font-size: 20vh;
     color: rgb(255, 142, 200);
     text-align: center;
-    text-shadow: 5px 5px 5px rgba(200, 142, 255, .5);
+    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
+    margin: 0;
     
 
 }
 #playerzone {
     display: grid;
     place-items: center;
-    
+   margin: 0; 
 }
 textarea {
     font-family: 'Fredoka One', cursive;
     resize: none;
     height: 200px;
-    width: 1000px;
+    width: 1400px;
+    max-width: 90%;
     position: relative;
     border: none;
-    background-color:rgb(200, 142, 255);
-    color:rgb(255, 255, 255);
-    font-size: 160px;
+    border-radius: 25px;
+    background-color:rgba(200, 142, 255, .5);
+    color:rgb(255, 246, 161);
+    font-size: 140px;
     text-align: center;
+    box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
     
 }
 input {
@@ -49,17 +54,18 @@ input {
     color:rgb(255, 246, 161);
     font-size: 140px;
     text-align: center;
-    box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.25);
+    box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
     
 }
 button {
     
     border:none;
-    height: 200px;
-    width: 1004px;
-    background-color:rgb(200, 142, 255);
+    background-color:rgb(255, 173, 228);
     color: white;
-    font-size: 100px;
+    font-size: 75px;
+    text-align: center;
+   
+    
     
 }
 textarea:focus {
@@ -72,7 +78,13 @@ input:focus {
 /* input:not(:focus) {
     display: none;
 } */
-
+.correct {
+    color:rgb(205, 255, 243);
+}
+.incorrect{
+    color: rgb(112, 57, 57);
+    /* text-decoration: line-through; */
+}
 audio{
     background-color: rgba(200, 142, 255, .5);
     display: none;

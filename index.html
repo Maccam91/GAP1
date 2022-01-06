@@ -25,17 +25,19 @@
         <div id="playerzone">
             <!-- <button id="start" onclick=startGame()>Start New Game</button> -->
             <form>
-                <!-- <textarea autofocus></textarea> -->
-               <input type=text autofocus>
+                <textarea id="playArea" autofocus></textarea>
+               <!-- <input type=text id="playArea" autofocus> -->
             </form>
             <iframe src="music\01 Laxcity - Elysian.wav" allow="autoplay" style="display:none" id="iframeAudio" autostart></iframe>
-            <audio id="bgmusic" controls autoplay loop>
+            
+            <audio id="bgmusic" controls autoplay="true" loop>
                 <source src="music\01 Laxcity - Elysian.wav"  type="audio/wav" autostart>
+                
             </audio>
-             
+            <!-- <button id="musicOn">🎵</button> -->
             
 
         </div>
-        
+       
         </body>
 </html>
