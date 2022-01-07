@@ -22,31 +22,24 @@
         
         <div id="startScreen">
 
-          Type Writers <br>Click to start!
+            ⌨Type Writers⌨<br>
 
         </div>
         <div id="game">
-        <div id="prompt">
-            
-            <h1>⌨Type Writers⌨</h1>
-            
+        <div id="prompt">            
+            <h1>⌨Type Writers⌨</h1>            
         </div>
-
-        <div id="rounds" hidden><span>Rounds completed</span> <br>0</div>
+        
 
         <div id="playerzone">
-            <!-- <button id="start" onclick=startGame()>Start New Game</button> -->
+            <div id="count"><span id="round">0</span></div>
             <form>
-                <textarea id="playArea" autofocus></textarea>
-               <!-- <input type=text id="playArea" autofocus> -->
-            </form>
-            <!-- <iframe src="music\01 Laxcity - Elysian.wav" allow="autoplay" style="display:none" id="iframeAudio" autostart></iframe> -->
-            
+                <textarea id="playArea" autofocus>type to begin</textarea>
+            </form>         
             <audio id="bgmusic" controls autoplay loop>
-                <source src="music\01 Laxcity - Elysian.wav"  type="audio/wav" autostart>
-                
+                <source src="music\01 Laxcity - Elysian.wav"  type="audio/wav" autostart>                
             </audio>
-            <input id="musicOn" type="toggle" value="MUSIC🔊" />
+            <input id="musicOn" type="button" value="MUSIC🔊" />
             </div>
         </div>
         </body>

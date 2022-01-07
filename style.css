@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
   }
 
 body {
@@ -12,15 +14,25 @@ body {
 }
 h1 {
     font-family: 'Fredoka One', cursive;
-    font-size: 200px;
-    color: rgb(255, 142, 200);
+    font-size: 20vw;
+    font-size: 20vh;
+    color: rgb(255, 111, 111);
     text-align: center;
     
 }
+#count {
+    font-family: 'Fredoka One', cursive;
+    font-size: 5vw;    
+    font-size: 5vh;
+    color: rgb(178, 112, 204);
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
+    margin: 0;
+}
 #rounds {
     font-family: 'Fredoka One', cursive;
-    font-size: 60px;
-    
+    font-size: 5vw;    
+    font-size: 5vh;   
     color: rgb(178, 112, 204);
     text-align: center;
     text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
@@ -30,7 +42,7 @@ h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 10vw;
     font-size: 10vh;
-    color: rgb(255, 142, 200);
+    color: rgb(255, 111, 111);
     text-align: center;
     text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
     margin: 0;
@@ -74,9 +86,6 @@ input {
     /* box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15); */
     
 }
-#game{
-    /* display: none; */
-}
 #startScreen {
     display: none;
     box-shadow:5px 5px 100px 5px rgba(36, 1, 56, 0.507);
@@ -110,11 +119,10 @@ input {
     font-family: 'Fredoka One', cursive;  
     border:none;
     background: transparent;
-    font-size: 10vw;
-    font-size: 10vh;
+    font-size: 3vw;
+    font-size: 3vh;
     text-align: center;
-    /* text-shadow: 5px 5px 5px rgba(200, 142, 255, .66); */
-    margin: 0;
+    margin: 0 auto;
     color: rgb(255, 93, 93);
 }
 textarea:focus {

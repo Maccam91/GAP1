@@ -1,15 +1,15 @@
 const playWords = ["red","blue","yellow","green","orange","violet","indigo","cat","dog","bird","quick","zebra","loop","Houston","Texas","713","832",
 "nine","money","league","challenge","slow","pink","complete","mvp","javaScript"]
-// console.log(playWords)
+
 const playZone = document.getElementById('playArea')
-// console.log(playZone)
+
 const promptDisplay = document.getElementById('prompt')
-// console.log(promptDisplay.innerText)
+
 let music = document.getElementById('bgmusic');
 music.volume = .05;
 
-
 playZone.addEventListener('input', () => {
+  
   const arrayPrompt = promptDisplay.querySelectorAll('span')
   const promptValue = playZone.value.split('')
   let correct = true
@@ -28,7 +28,7 @@ playZone.addEventListener('input', () => {
         correct = false
       }
     })
-    if(correct) renderNewPrompt()
+    if(correct) renderNewPrompt()  
   
 })
 
@@ -40,7 +40,8 @@ prompt.split('').forEach(character => {
   characterSpan.innerText = character
   promptDisplay.appendChild(characterSpan)
 })
-playZone.value= null
+playZone.value= null;
+roundsComplete()
 }
 
 function newPrompt(length,x) {
@@ -53,67 +54,11 @@ function newPrompt(length,x) {
    }
    return result.join(' ');
    }
-newPrompt(3,playWords)
 
-
-// function playMusic(btn){
-//   let btn= document.getElementById('musicOn').addEventListener('click')
-//   var music = Audio('music\01 Laxcity - Elysian.wav');
-//   music.play();
-//   }
-// function playerInput(){
-//     inputArea = playZone.value;
-//     inputAreaArray = inputArea.split('');
-
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const startButton = document.getElementById('start')
-// console.log(startButton)
-// startButton.addEventListener('click',startGame())
-// function startGame() {
-//   console.log("start");
-//   if(startButton.style.display === "none") {
-//       startButton.style.display = "block";
-//   } else {
-//       startButton.style.display = "none";
-//   }
-//  playZone.style.display === "block";
-// }
+   let round = 0;
+     
+   function roundsComplete() {
+   round += 1;
+   document.getElementById("round").innerHTML='Round   '+round;
+   }
+   
