@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Type Writers</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
         
         <div id="startScreen">
 
-            ⌨Type Writers⌨<br>
+            ⌨Type Writers⌨
 
         </div>
         <div id="game">
@@ -36,11 +36,14 @@
             <form>
                 <textarea id="playArea" autofocus>type to begin</textarea>
             </form>         
-            <audio id="bgmusic" controls autoplay loop>
-                <source src="music\01 Laxcity - Elysian.wav"  type="audio/wav" autostart>                
+            <audio id="bgmusic" controls loop>
+                <source src="music\01 Laxcity - Elysian.wav"  type="audio/mp3">                
             </audio>
-            <input id="musicOn" type="button" value="MUSIC🔊" />
+            
+            
             </div>
+            <input class="music" id="musicOn" type="button" value="MUSIC ON🔊" onclick="document.getElementById('bgmusic').play()" />
+            <input class="music" id="musicOff" type="button" value="MUSIC OFF🔈" onclick="document.getElementById('bgmusic').pause()" />
         </div>
         </body>
 </html>

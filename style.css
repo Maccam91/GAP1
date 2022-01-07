@@ -3,13 +3,12 @@
     margin: 0;
     font-family: 'Fredoka One', cursive;
   }
-
+ 
 body {
-    background-color: rgb(255, 176, 229);
+    background-color: rgb(255, 195, 235);
     display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     margin: 0;
 }
 h1 {
@@ -42,7 +41,9 @@ h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 10vw;
     font-size: 10vh;
-    color: rgb(255, 111, 111);
+    font-size-adjust: auto;
+    text-size-adjust: auto;
+    color: rgb(255, 142, 200);
     text-align: center;
     text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
     margin: 0;
@@ -57,17 +58,19 @@ h1 {
 textarea {
     font-family: 'Fredoka One', cursive;
     resize: none;
-    height: 200px;
-    width: 1400px;
-    max-width: 90%;
+    height: 44vh;
+    width: 80vw;
+    max-width: 100%;
     position: relative;
     border: none;
     border-radius: 25px;
     background-color:rgba(200, 142, 255, .5);
     color:rgb(255, 246, 161);
-    font-size: 160px;
+    font-size: 10vw;
+    font-size: 10vh;
     text-align: center;
     box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
+    position: static;
     
     
 }
@@ -115,6 +118,18 @@ input {
     
     
 }
+#musicOff{
+    font-family: 'Fredoka One', cursive;  
+    border:none;
+    background: transparent;
+    font-size: 3vw;
+    font-size: 3vh;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(255, 93, 93);
+    position: fixed;
+    right: 0;
+}
 #musicOn{
     font-family: 'Fredoka One', cursive;  
     border:none;
@@ -124,6 +139,14 @@ input {
     text-align: center;
     margin: 0 auto;
     color: rgb(255, 93, 93);
+    position: fixed;
+    left: 0;
+}
+.music{
+    
+    display: inline;
+    width: 15vw;
+    height: 15vh;
 }
 textarea:focus {
     outline: none;
@@ -134,11 +157,12 @@ input:focus {
 
 
 .correct {
-    color:rgba(93, 255, 174,0.705);
+    color:rgba(117, 255, 186, 0.801);
+    text-decoration: underline;
 }
 .incorrect{
-    color: rgb(112, 57, 57);
-    /* text-decoration: line-through; */
+    color: rgb(255, 111, 111);
+    text-decoration: underline;
 }
 audio{
     background-color: rgba(200, 142, 255, .5);

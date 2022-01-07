@@ -1,15 +1,21 @@
 const playWords = ["red","blue","yellow","green","orange","violet","indigo","cat","dog","bird","quick","zebra","loop","Houston","Texas","713","832",
-"nine","money","league","challenge","slow","pink","complete","mvp","javaScript"]
+"nine","money","league","challenge","slow","pink","complete","mvp","javaScript","periwinkle","lavender","magic","the","gathering","dungeon","dragon","esport","Aatrox","Rengar","Reddit","bang",
+"Pokemon","Haunter","Ash","wallet","steam","Epic","CAPS","LOCK","General","Assembly","axolotl","qi","zoolander","QWERTY","shift","enter","command","alt","control","rainbow","2+2","foodie"]
 
 const playZone = document.getElementById('playArea')
 
 const promptDisplay = document.getElementById('prompt')
 
 let music = document.getElementById('bgmusic');
-music.volume = .05;
+music.volume = .15;
+music.playbackRate= 2;
+
+
+let round = 0;
 
 playZone.addEventListener('input', () => {
   
+  // document.getElementById('bgmusic').play()
   const arrayPrompt = promptDisplay.querySelectorAll('span')
   const promptValue = playZone.value.split('')
   let correct = true
@@ -33,7 +39,7 @@ playZone.addEventListener('input', () => {
 })
 
 async function renderNewPrompt() {
- const prompt = await newPrompt(6,playWords)
+ const prompt = await newPrompt(round+1,playWords)
 promptDisplay.innerHTML = ''
 prompt.split('').forEach(character => {
   const characterSpan = document.createElement('span')
@@ -55,10 +61,11 @@ function newPrompt(length,x) {
    return result.join(' ');
    }
 
-   let round = 0;
+  
      
    function roundsComplete() {
-   round += 1;
+   round ++;
    document.getElementById("round").innerHTML='Round   '+round;
    }
-   
+
+// let endGame = setTimeout(())
