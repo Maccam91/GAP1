@@ -13,8 +13,8 @@ body {
 }
 h1 {
     font-family: 'Fredoka One', cursive;
-    font-size: 20vw;
-    font-size: 20vh;
+    font-size: 18vw;
+    font-size: 18vh;
     color: rgb(255, 111, 111);
     text-align: center;
     
@@ -118,6 +118,7 @@ input {
     
     
 }
+
 #musicOff{
     font-family: 'Fredoka One', cursive;  
     border:none;
@@ -169,3 +170,4 @@ audio{
     display: none;
     
 }
+
