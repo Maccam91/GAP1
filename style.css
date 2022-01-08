@@ -25,20 +25,13 @@ h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 5vw;    
     font-size: 5vh;
-    color: rgb(178, 112, 204);
+    color: rgb(4, 233, 233);
     text-align: center;
-    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
     margin: 0;
+    position: absolute;
+    bottom: 100px;
 }
-#rounds {
-    font-family: 'Fredoka One', cursive;
-    font-size: 5vw;    
-    font-size: 5vh;   
-    color: rgb(201, 117, 235);
-    text-align: center;
-    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
-    margin: 0;
-}
+
 #prompt{
     font-family: 'Fredoka One', cursive;
     font-size: 10vw;
@@ -47,7 +40,7 @@ h1 {
     text-size-adjust: auto;
     color: rgb(255, 128, 193);
     text-align: center;
-    text-shadow: 5px 3px 5px rgba(200, 142, 255, .66);
+    /* text-shadow: 5px 3px 5px rgba(200, 142, 255, .66); */
     margin: 0;
     
 
@@ -56,6 +49,7 @@ h1 {
     display: grid;
     place-items: center;
     margin: 0;
+    
     
 }
 .playerBG{
@@ -82,7 +76,10 @@ textarea {
     font-size: 10vh;
     text-align: center;
     box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
-    position: static;
+    position: relative;
+    bottom: 1px;
+    top: 100px;
+ 
    
     
 }
@@ -172,7 +169,7 @@ input:focus {
 
 
 .correct {
-    color:rgba(117, 255, 186, 0.801);
+    color:rgb(117, 255, 186);
     text-decoration: underline;
 }
 .incorrect{
@@ -180,7 +177,6 @@ input:focus {
     text-decoration: underline;
 }
 audio{
-    background-color: rgba(200, 142, 255, .5);
     display: none;
     
 }
