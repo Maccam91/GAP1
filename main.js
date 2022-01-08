@@ -7,11 +7,16 @@ const playZone = document.getElementById('playArea')
 const promptDisplay = document.getElementById('prompt')
 
 let music = document.getElementById('bgmusic');
-music.volume = .15;
-music.playbackRate= 2;
+music.volume = .025;
+music.playbackRate= 1;
 
 
 let round = 0;
+
+
+
+
+
 
 playZone.addEventListener('input', () => {
   

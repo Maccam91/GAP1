@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    top: -1;
     font-family: 'Fredoka One', cursive;
   }
  
 body {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/029/320/295/original/bogdan-mb0sco-coffeeanim.gif?1601147277");
     background-color: rgb(255, 195, 235);
     display: grid;
     justify-content: center;
@@ -32,7 +34,7 @@ h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 5vw;    
     font-size: 5vh;   
-    color: rgb(178, 112, 204);
+    color: rgb(201, 117, 235);
     text-align: center;
     text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
     margin: 0;
@@ -43,9 +45,9 @@ h1 {
     font-size: 10vh;
     font-size-adjust: auto;
     text-size-adjust: auto;
-    color: rgb(255, 142, 200);
+    color: rgb(255, 128, 193);
     text-align: center;
-    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
+    text-shadow: 5px 3px 5px rgba(200, 142, 255, .66);
     margin: 0;
     
 
@@ -53,25 +55,35 @@ h1 {
 #playerzone {
     display: grid;
     place-items: center;
-    margin: 0; 
+    margin: 0;
+    
+}
+.playerBG{
+    position: absolute;
+    display: grid;
+    background-image: inherit;
+    
+    z-index: -1;
+    
 }
 textarea {
+    
     font-family: 'Fredoka One', cursive;
     resize: none;
-    height: 44vh;
-    width: 80vw;
+    height: 480px;
+    width: 1000px;
     max-width: 100%;
     position: relative;
     border: none;
     border-radius: 25px;
-    background-color:rgba(200, 142, 255, .5);
+    background-color:rgba(200, 142, 255, .25);
     color:rgb(255, 246, 161);
     font-size: 10vw;
     font-size: 10vh;
     text-align: center;
     box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
     position: static;
-    
+   
     
 }
 input {
@@ -127,7 +139,8 @@ input {
     font-size: 3vh;
     text-align: center;
     margin: 0 auto;
-    color: rgb(255, 93, 93);
+    color: rgb(4, 233, 233);
+    /* text-shadow: 5px 2px 5px rgba(200, 142, 255, .66); */
     position: fixed;
     right: 0;
 }
@@ -139,7 +152,8 @@ input {
     font-size: 3vh;
     text-align: center;
     margin: 0 auto;
-    color: rgb(255, 93, 93);
+    color: rgb(4, 223, 233);
+    /* text-shadow: 5px 2px 5px rgba(200, 142, 255, .66); */
     position: fixed;
     left: 0;
 }
