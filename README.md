@@ -23,6 +23,7 @@ The players will then have to input to the best of the skills the string that wa
 
 ## Tech used
 -JavaScript
+
     1. async function
 
     2. timeOut intervals
@@ -32,7 +33,9 @@ The players will then have to input to the best of the skills the string that wa
     4. math
 
     5. DOMmanipulation
+
 -HTML
+
     1. ID and Classes
 
     2. Audio
@@ -40,12 +43,13 @@ The players will then have to input to the best of the skills the string that wa
     3. onClick functions
     
 -CSS
+
     1. '-webkit-'
 
     2. image-background
 
     3. vh,vw sizing
-    
+
     4. *{ styling }
 
 
