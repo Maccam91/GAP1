@@ -17,36 +17,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     
 </head>
-    <!-- <h1>Type Writers</h1> -->
+    
     <body>
-        
         <div id="startScreen">
-
-            ⌨Type Writers⌨
-
+            <h1><strong>⌨Type Writers⌨</strong><br>
+             is a typing game where random strings will be displayed each round.<br>
+             Complete the round within 1 minute to progress or else you <strong>lose</strong>.
+             To begin press any key and the game will begin in 3 seconds.
+            </h1>
         </div>
-        <div id="game">
-        <div id="prompt">            
-            <h1>⌨Type Writers⌨</h1>            
-        </div>
-        
+        <div id="prompt" ></div>          
 
         <div id="playerzone">
-            <div id="count"><span id="round"></span></div>
+            <div id="count">-3</div>
+            <span id="round"></span>
             <form>
-                <textarea id="playArea" autofocus>type to begin</textarea>
-            </form>
-                     
+                <textarea id="playArea" autofocus>type here!</textarea>
+            </form>                     
             <audio id="bgmusic" controls loop>
                 <source src="music\01 Laxcity - Elysian.wav"  type="audio/mp3">                
-            </audio>
-            <!-- <div id="playerzone" class="playerBG">
-    <iframe src="https://i.pinimg.com/originals/4a/65/ab/4a65abeead3a8d113bccfee5d5d239f4.gif" width="1000px" height="480px"  frameBorder="0" allowFullScreen></iframe><a href=https://i.pinimg.com/originals/4a/65/ab/4a65abeead3a8d113bccfee5d5d239f4.gif></a>
-</div> -->
-            
+            </audio>          
             </div>
             <input class="music" id="musicOn" type="button" value="MUSIC ON🔊" onclick="document.getElementById('bgmusic').play()" />
             <input class="music" id="musicOff" type="button" value="MUSIC OFF🔈" onclick="document.getElementById('bgmusic').pause()" />
         </div>
+
+        <div id="gameOver" >time is ticking</div>
+
         </body>
 </html>

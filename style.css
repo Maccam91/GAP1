@@ -1,135 +1,107 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    top: -1;
     font-family: 'Fredoka One', cursive;
   }
- 
+
 body {
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/029/320/295/original/bogdan-mb0sco-coffeeanim.gif?1601147277");
     background-color: rgb(255, 195, 235);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    background-image: url("./background/849790.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-h1 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 18vw;
-    font-size: 18vh;
-    color: rgb(255, 111, 111);
+h1{
+    border: rgb(255, 0, 106);
+}
+
+#startScreen {
+    color: rgb(255, 0, 106);    
+    font-size: 5vw;
+    font-size: 5vh;
+    background-color: rgba(143, 59, 252, 0.788);
+    background-image: url("./background/869910.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
-    
+    margin: 0;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:rgb(40, 1, 77);
 }
+
+
+
+#gameOver {
+    display: none;
+    color: rgb(255, 246, 161);    
+    font-size: 20vw;
+    font-size: 20vh;
+    background-color: rgb(255, 104, 78);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: url("./background/723262.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-shadow: 4px 4px 4px rgba(20, 6, 34, 0.726);
+    
+
+}
+
 #count {
-    font-family: 'Fredoka One', cursive;
     font-size: 5vw;    
     font-size: 5vh;
     color: rgb(4, 233, 233);
     text-align: center;
-    margin: 0;
     position: absolute;
-    bottom: 100px;
+    bottom: 1cm;    
 }
 
-#prompt{
-    font-family: 'Fredoka One', cursive;
+#prompt {
     font-size: 10vw;
-    font-size: 10vh;
-    font-size-adjust: auto;
-    text-size-adjust: auto;
-    color: rgb(255, 128, 193);
+    font-size: 10vh;  
+    color: rgb(252, 162, 209);
     text-align: center;
-    /* text-shadow: 5px 3px 5px rgba(200, 142, 255, .66); */
     margin: 0;
-    
-
+    z-index: -1;
 }
+
 #playerzone {
     display: grid;
-    place-items: center;
-    margin: 0;
-    
-    
-}
-.playerBG{
-    position: absolute;
-    display: grid;
-    background-image: inherit;
-    
-    z-index: -1;
-    
-}
-textarea {
-    
-    font-family: 'Fredoka One', cursive;
-    resize: none;
-    height: 480px;
-    width: 1000px;
-    max-width: 100%;
-    position: relative;
-    border: none;
-    border-radius: 25px;
-    background-color:rgba(200, 142, 255, 0.541);
-    color:rgb(255, 246, 161);
-    font-size: 10vw;
-    font-size: 10vh;
-    text-align: center;
-    box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);
-    position: relative;
-    bottom: 1px;
-    top: 100px;
- 
-   
-    
-}
-input {
-    font-family: 'Fredoka One', cursive;
-    resize: none;
-    height: 200px;
-    width: 1000px;
-    position: relative;
-    border: none;
-    border-radius: 25px;
-    background-color:rgba(200, 142, 255, .5);
-    color:rgb(255, 246, 161);
-    font-size: 140px;
-    text-align: center;
-    /* box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15); */
-    
-}
-#startScreen {
-    display: none;
-    box-shadow:5px 5px 100px 5px rgba(36, 1, 56, 0.507);
-    border:none;
-    border-radius: 50px;
-    font-family: 'Fredoka One', cursive;    
-    font-size: 25vw;
-    font-size: 25vh;    
-    background-color: rgba(93, 255, 174, 0.705);
-    color: rgb(255, 142, 200);
-    text-align: center;
-    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
-    margin: 0;
-    
-}
-#startButton {
-    
-    border:none;
-    font-family: 'Fredoka One', cursive;    
-    font-size: 25vw;
-    font-size: 25vh;    
-    background-color: transparent;
-    color: rgb(255, 142, 200);
-    text-align: center;
-    text-shadow: 5px 5px 5px rgba(200, 142, 255, .66);
-    margin: 0; 
-    
-    
+    place-items: center;    
 }
 
-#musicOff{
-    font-family: 'Fredoka One', cursive;  
+#playArea {
+    position: absolute;
+    resize: none;
+    height: 40vh;
+    width: 80vw;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    background-color:rgba(200, 142, 255, 0.15);
+    color:rgb(255, 246, 161);
+    font-size: 100px;
+    font-size: 5vw;
+    font-size: 5vh;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px rgba(20, 6, 34, 0.15);    
+    bottom: 6cm;
+    left: 5cm;
+    right:10cm;
+    z-index: -1;
+}
+
+#musicOff {
     border:none;
     background: transparent;
     font-size: 3vw;
@@ -137,12 +109,12 @@ input {
     text-align: center;
     margin: 0 auto;
     color: rgb(4, 233, 233);
-    /* text-shadow: 5px 2px 5px rgba(200, 142, 255, .66); */
-    position: fixed;
+    position: absolute;
     right: 0;
+    bottom: 0;
 }
-#musicOn{
-    font-family: 'Fredoka One', cursive;  
+
+#musicOn {
     border:none;
     background: transparent;
     font-size: 3vw;
@@ -150,34 +122,33 @@ input {
     text-align: center;
     margin: 0 auto;
     color: rgb(4, 223, 233);
-    /* text-shadow: 5px 2px 5px rgba(200, 142, 255, .66); */
-    position: fixed;
+    position: absolute;
     left: 0;
+    bottom: 0;
 }
-.music{
-    
+
+.music {    
     display: inline;
     width: 15vw;
     height: 15vh;
 }
+
 textarea:focus {
     outline: none;
-  }
-input:focus {
-  outline: none;
 }
-
 
 .correct {
-    color:rgb(117, 255, 186);
-    text-decoration: underline;
+    -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(117, 255, 186);
 }
-.incorrect{
-    color: rgb(255, 111, 111);
+
+.incorrect {   
     text-decoration: underline;
+    -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 81, 81);
 }
-audio{
-    display: none;
-    
+
+audio {
+    display: none;    
 }
 
