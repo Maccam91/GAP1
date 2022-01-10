@@ -61,13 +61,31 @@ The players will then have to input to the best of the skills the string that wa
 1. Generate a wordbank/string that the users must replicate in the submission field.
 2. I need to create a field where users can input their own text and attempt to build the string that was shown at the start of each round.
 3. I should indicate if the users input the correct string and alern them when an error has been submitted.
+
+### planned updates
+1. include a diffuculty selection menu
+2. save Highscore the players from runs
+3. better string constructor
+4. create buttons for game start and game over screen
+
+
 ### In-Game Screen shots
 
+-startScreen
+
 ![](screenshots/gamestart.png)
+
+-gamePlay
+
 ![](screenshots/gameplay.png)
+
+-gameOverScreen
+
 ![](screenshots/gameover.png)
 
+
 ### WireFrame
+
 ![](/GAP1wireframe.jpg)
 
 
