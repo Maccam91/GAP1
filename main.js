@@ -64,7 +64,7 @@ const character = promptValue[index]
 
   if(correct){renderNewPrompt(); clearTimeout(roundTracker),resetTime()}
 
-  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 60000);}
+  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 20000);}
 
 })
 
@@ -125,10 +125,11 @@ function completedRound() {
     }
 
    function gameOver() {
-    
+
     document.getElementById('gameOver').style.display ='block';
-    document.getElementById('gameOver').innerText ="Game Over you've reached"+'  '+document.getElementById('round').innerText+'  '+"Refresh to try again";
+    document.getElementById('gameOver').innerText ="Game Over you've reached"+'  '+document.getElementById('round').innerText;
     document.getElementById('bgmusic').muted=true;
+    setTimeout(() => {document.getElementById('gameOver').innerText = "refresh the page to play again"}, 5000)
     endMusic.play();
     
   }

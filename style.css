@@ -40,14 +40,13 @@ body {
     color: rgb(255, 246, 161);    
     font-size: 20vw;
     font-size: 20vh;
-    background-color: rgb(255, 104, 78);
     z-index: 1;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: end;
     background-image: url("./background/723262.gif");
     background-repeat: no-repeat;
     background-size: cover; 

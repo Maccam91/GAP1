@@ -54,7 +54,7 @@ The players will then have to input to the best of the skills the string that wa
 
 
 ## Link to deployed version
-[Live verson of Typer Writers](https://maccam91.github.io/GAP1/)
+[Live verson of Type Writers](https://maccam91.github.io/GAP1/)
 
 
 ## MVP GOALS
