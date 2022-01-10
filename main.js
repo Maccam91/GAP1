@@ -21,20 +21,16 @@ endMusic.loop = true
 let roundTracker = 0
 
 let round = 0
+
 let roundTime = 0
 
 roundTime = setInterval(() => { document.getElementById('count').innerText++}, 1000)
-
-
-function gameStarting() {
-document.getElementById('startScreen').style.display='none'  
-}
 
 let counter = document.getElementById('count').innerText
 
 playZone.addEventListener('input', () => {
   
-setTimeout(() => {gameStarting()},30000)
+setTimeout(() => {gameStarting()},3000)
 
 document.getElementById('bgmusic').play();
    
@@ -106,9 +102,7 @@ function newPrompt(length,x) {
 
    }  
      
-function completedRound() {
-
-  
+function completedRound() {  
 
    round ++;
 
@@ -123,6 +117,12 @@ function completedRound() {
       document.getElementById('count').innerText=0
     }
   }
+
+  function gameStarting() {
+
+    document.getElementById('startScreen').style.display='none'  
+
+    }
 
    function gameOver() {
     
