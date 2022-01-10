@@ -65,8 +65,7 @@ body {
 }
 
 #prompt {
-    font-size: 10vw;
-    font-size: 10vh;  
+    font-size: 5vh;  
     color: rgb(252, 162, 209);
     text-align: center;
     margin: 0;
