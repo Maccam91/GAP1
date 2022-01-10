@@ -135,13 +135,13 @@ textarea:focus {
 }
 
 .correct {
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgb(117, 255, 186);
 }
 
 .incorrect {   
     text-decoration: underline;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgb(255, 81, 81);
 }
 
