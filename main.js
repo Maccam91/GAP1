@@ -14,22 +14,25 @@ let music = document.getElementById('bgmusic');
 music.volume = .025;
 music.playbackRate= 1;
 
+let endMusic = new Audio('music/40 Purrple Cat - Ascent.wav')
+endMusic.volume = .05;
+endMusic.loop = true;
 
 let roundTracker = 0
+
 let round = 0
-let roundTime = 0  
-let counter = document.getElementById('count').innerHTML
-     
 
 
+const gameStart = setTimeout(() =>{ document.getElementById('startScreen').style.display='none' } ,  3000)
 
+let roundTime = setTimeout(() =>{ roundTime = setInterval(() => { document.getElementById('count').innerText++
+}, 1000); }, 3000 ) 
+
+let counter = document.getElementById('count').innerText
 
 playZone.addEventListener('input', () => {
 
-roundTime = setInterval(() => { document.getElementById('count').innerText++  
-}, 1000);
-
-setTimeout(() =>{ document.getElementById('startScreen').style.display='none' } , 3000)
+gameStart
 
 document.getElementById('bgmusic').play();
    
@@ -50,19 +53,20 @@ const character = promptValue[index]
         
     } else if (character === characterSpan.innerText) {
       characterSpan.classList.add('correct')
-      characterSpan.classList.remove('incorrect')
-      clearTimeout(roundTracker)  
-      clearTimeout(roundTime)      
+      characterSpan.classList.remove('incorrect')   
+      
+            
     } else {
       characterSpan.classList.remove('correct')
       characterSpan.classList.add('incorrect')
       correct = false    
     }
+
   })
 
-  if(correct){renderNewPrompt(); clearTimeout(roundTracker)} 
+  if(correct){renderNewPrompt(); clearTimeout(roundTracker),resetTime()}
 
-  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 63000)}
+  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 63000);}
 
 })
 
@@ -102,16 +106,27 @@ function newPrompt(length,x) {
      
 function completedRound() {
 
+  
+
    round ++;
 
    document.getElementById("round").innerHTML='Round '+round;
 
    }
 
+   function resetTime(){
+
+    if(counter<=60){
+  
+      document.getElementById('count').innerText=0
+    }
+  }
+
    function gameOver() {
     
-    document.getElementById('gameOver').style.display ='block'
+    document.getElementById('gameOver').style.display ='block';
     document.getElementById('gameOver').innerText ="Game Over you've reached"+'  '+document.getElementById('round').innerText+'  '+"Refresh to try again";
-    document.getElementById('bgmusic').pause();
+    document.getElementById('bgmusic').muted=true;
+    endMusic.play();
     
   }
