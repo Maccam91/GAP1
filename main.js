@@ -27,18 +27,14 @@ roundTime = setInterval(() => { document.getElementById('count').innerText++}, 1
 
 
 function gameStarting() {
-
-document.getElementById('startScreen').style.display='none'; 
-  
+document.getElementById('startScreen').style.display='none'  
 }
 
 let counter = document.getElementById('count').innerText
 
 playZone.addEventListener('input', () => {
   
-setTimeout(() => {gameStarting()},3000)
-
-
+setTimeout(() => {gameStarting()},30000)
 
 document.getElementById('bgmusic').play();
    
