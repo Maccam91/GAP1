@@ -31,8 +31,6 @@ let counter = document.getElementById('count').innerText
 playZone.addEventListener('input', () => {
   
 setTimeout(() => {gameStarting()},3000)
-
-document.getElementById('bgmusic').play();
    
 const arrayPrompt = promptDisplay.querySelectorAll('span')
 
@@ -64,7 +62,7 @@ const character = promptValue[index]
 
   if(correct){renderNewPrompt(); clearTimeout(roundTracker),resetTime()}
 
-  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 20000);}
+  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 60000);}
 
 })
 
@@ -121,6 +119,7 @@ function completedRound() {
   function gameStarting() {
 
     document.getElementById('startScreen').style.display='none'  
+    document.getElementById('bgmusic').play();
 
     }
 
