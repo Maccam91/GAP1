@@ -10,29 +10,35 @@ const playZone = document.getElementById('playArea')
 
 const promptDisplay = document.getElementById('prompt')
 
-let music = document.getElementById('bgmusic');
-music.volume = .025;
-music.playbackRate= 1;
+let music = document.getElementById('bgmusic')
+music.volume = .025
+music.playbackRate= 1
 
 let endMusic = new Audio('music/40 Purrple Cat - Ascent.wav')
-endMusic.volume = .05;
-endMusic.loop = true;
+endMusic.volume = .05
+endMusic.loop = true
 
 let roundTracker = 0
 
 let round = 0
+let roundTime = 0
+
+roundTime = setInterval(() => { document.getElementById('count').innerText++}, 1000)
 
 
-const gameStart = setTimeout(() =>{ document.getElementById('startScreen').style.display='none' } ,  3000)
+function gameStarting() {
 
-let roundTime = setTimeout(() =>{ roundTime = setInterval(() => { document.getElementById('count').innerText++
-}, 1000); }, 3000 ) 
+document.getElementById('startScreen').style.display='none'; 
+  
+}
 
 let counter = document.getElementById('count').innerText
 
 playZone.addEventListener('input', () => {
+  
+setTimeout(() => {gameStarting()},3000)
 
-gameStart
+
 
 document.getElementById('bgmusic').play();
    
@@ -66,7 +72,7 @@ const character = promptValue[index]
 
   if(correct){renderNewPrompt(); clearTimeout(roundTracker),resetTime()}
 
-  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 63000);}
+  if(correct|false){roundTracker = setTimeout(() => { gameOver()} , 60000);}
 
 })
 
