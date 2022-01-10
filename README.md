@@ -21,6 +21,20 @@ The players will then have to input to the best of the skills the string that wa
 - "As a player I would like a system to alert me of any typos I make during the game"
 - "As a player I would like a button to start/restart the game"
 
+## Tech used
+.JavaScript
+    .async function
+    .timeOut intervals
+    .for-loop
+    .math
+    .DOMmanipulation
+.HTML
+.CSS
+
+
+## Link to deployed version
+![](https://maccam91.github.io/GAP1/)
+
 
 ## MVP GOALS
 1. Generate a wordbank/string that the users must replicate in the submission field.
@@ -34,5 +48,7 @@ The players will then have to input to the best of the skills the string that wa
 
 ### WireFrame
 ![](/GAP1wireframe.jpg)
+
+
 
 
