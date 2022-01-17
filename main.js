@@ -10,6 +10,7 @@ const playZone = document.getElementById('playArea')
 
 const promptDisplay = document.getElementById('prompt')
 const startButton = document.getElementById('startGame')
+const newRecord = document.getElementById('highScore')
 
 
 let music = document.getElementById('bgmusic')
@@ -27,14 +28,12 @@ let round = 0
 let roundTime = 0
 
 startButton.addEventListener('click', ()=>{
-  setTimeout(() => {gameStarting()},3000)
-  setTimeout(()=>{renderNewPrompt()},3000)
+  gameStarting()
+  renderNewPrompt()
   setTimeout(() => { gameOver()} , 60000)
   playZone.focus()
 })
 
-
-// roundTime = setInterval(() => { document.getElementById('count').innerText++}, 1000)
 
 let counter = document.getElementById('count').innerText
 
@@ -133,7 +132,7 @@ function completedRound() {
     }
 
    function gameOver() {
-
+    
     document.getElementById('gameOver').style.display ='block';
     document.getElementById('gameOver').innerText ="Game Over you've reached"+'  '+document.getElementById('round').innerText;
     document.getElementById('bgmusic').muted=true;
