@@ -4,7 +4,7 @@ const playWords = ["red","blue","yellow","green","orange","violet","indigo","cat
 "Pokemon","Haunter","Ash","wallet","steam","Epic","CAPS","LOCK","General","Assembly","axolotl","qi","zoolander","QWERTY"
 ,"shift","enter","command","alt","control","rainbow","2+2","foodie","computer","fish",
 "lizard","vapor","wave","Lo-Fi","Michael","SNER","rick","water","fire","air","earth","mutant","witcher","8675309",
-"rick","roll","never","gonna","give","you","up","turn","around","and","desert"]
+"rick","roll","never","gonna","give","you","up","turn","around","and","desert","BakerRipley","bridge","tech"]
 
 const playZone = document.getElementById('playArea')
 
