@@ -9,6 +9,8 @@ const playWords = ["red","blue","yellow","green","orange","violet","indigo","cat
 const playZone = document.getElementById('playArea')
 
 const promptDisplay = document.getElementById('prompt')
+const startButton = document.getElementById('startGame')
+
 
 let music = document.getElementById('bgmusic')
 music.volume = .025
@@ -24,19 +26,26 @@ let round = 0
 
 let roundTime = 0
 
-roundTime = setInterval(() => { document.getElementById('count').innerText++}, 1000)
+startButton.addEventListener('click', ()=>{
+  setTimeout(() => {gameStarting()},3000)
+  setTimeout(()=>{renderNewPrompt()},3000)
+  setTimeout(() => { gameOver()} , 60000)
+  playZone.focus()
+})
+
+
+// roundTime = setInterval(() => { document.getElementById('count').innerText++}, 1000)
 
 let counter = document.getElementById('count').innerText
 
 playZone.addEventListener('input', () => {
-  
-setTimeout(() => {gameStarting()},3000)
-   
+     
 const arrayPrompt = promptDisplay.querySelectorAll('span')
 
 const promptValue = playZone.value.split('')
 
 let correct = true
+
 
 arrayPrompt.forEach((characterSpan, index) => {
 
@@ -117,7 +126,7 @@ function completedRound() {
   }
 
   function gameStarting() {
-
+    roundTime = setInterval(() => { document.getElementById('count').innerText++}, 1000)
     document.getElementById('startScreen').style.display='none'  
     document.getElementById('bgmusic').play();
 

@@ -23,8 +23,9 @@
             <h1><strong>⌨Type Writers⌨</strong><br>
              Is a typing game where random strings will be displayed each round.<br>
              Complete the round within 1 minute to progress or else you <strong>lose</strong>.<br>
-             To begin press any key and the game will begin in shortly.
+             Click start to begin the game.
             </h1>
+            <input type="button" id="startGame" value="START ⌨"/>
         </div>
         <div id="prompt"></div>          
 
@@ -39,10 +40,12 @@
             </audio>  
             </div>
             <input class="music" id="musicOn" type="button" value="MUSIC ON🔊" onclick="document.getElementById('bgmusic').play()" />
-            <input class="music" id="musicOff" type="button" value="MUSIC OFF🔈" onclick="document.getElementById('bgmusic').muted=true" />
+            <input class="music" id="musicOff" type="button" value="MUSIC OFF🔈" onclick="document.getElementById('bgmusic').pause()" />
         </div>
 
-        <div id="gameOver" >time is ticking</div>
+        <div id="gameOver" >
+            
+            time is ticking</div>
 
         </body>
 </html>

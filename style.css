@@ -53,6 +53,25 @@ body {
     text-shadow: 4px 4px 4px rgba(20, 6, 34, 0.726);    
 
 }
+#startGame:hover{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(255, 0, 149);
+    font-size: 7vw;
+    font-size: 7vh;
+    width: 18vw;
+    height: 12vh
+
+
+}
+#startGame{
+    color: thistle;
+    border: none;
+    font-size: 5vw;
+    font-size: 5vh;
+    width: 12vw;
+    height: 10vh;
+    background: transparent;
+}
 
 #count {
     font-size: 5vw;    
