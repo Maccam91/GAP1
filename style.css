@@ -58,8 +58,8 @@ body {
     -webkit-text-stroke-color: rgb(255, 0, 149);
     font-size: 7vw;
     font-size: 7vh;
-    width: 18vw;
-    height: 12vh
+    width: 20vw;
+    height: 14vh
 
 
 }
@@ -68,7 +68,7 @@ body {
     border: none;
     font-size: 5vw;
     font-size: 5vh;
-    width: 12vw;
+    width: 14vw;
     height: 10vh;
     background: transparent;
 }
