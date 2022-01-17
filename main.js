@@ -30,7 +30,6 @@ let roundTime = 0
 startButton.addEventListener('click', ()=>{
   gameStarting()
   renderNewPrompt()
-  setTimeout(() => { gameOver()} , 60000)
   playZone.focus()
 })
 
